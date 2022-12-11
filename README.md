@@ -1,9 +1,7 @@
 
 # Desafio API - Pet
 
-API REST que será consumida por um front para criação de um sistema para uma clinica veterinária.
-
-
+ATIVIDADE AVALIATIVA DE DESENVOLVIMENTO DE APLICAÇÕES PARA A INTERNET.
 
 
 ## Documentação
@@ -29,5 +27,5 @@ Segue um arquivo para testes no Postman dentro da pasta postman no projeto.
 ## Funcionalidades
 
 - CRUD de Cliente, Veterinário, Cachorro e Atendimento
-- Consumo de API thedog
+- Consumo de API
 
