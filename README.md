@@ -1,9 +1,18 @@
 
-# Desafio API - Pet
+# PETFELLAS
+###### (Projeto Petshop)
 
-ATIVIDADE AVALIATIVA DE DESENVOLVIMENTO DE APLICAÇÕES PARA A INTERNET.
+## ATIVIDADE AVALIATIVA DE DESENVOLVIMENTO DE APLICAÇÕES PARA A INTERNET.
 
-
+#### Igor Sobral - 01383796
+#### jackson Nascimento - 01368457
+#### Luiz Oliveira - 01227047
+#### Victor Vasconcelos - 01348102
+#### Rodrigo Calvalcanti - 01362638
+#### Vitor Veras - 01535603
+#### Mateus Martorano - 01351757
+#### Matheus Moraes - 01361823
+#### Denys Wildson - 01380977
 ## Documentação
 
 Após subir o ambiente basta clicar no link abaixo para vizualizar o swagger.
