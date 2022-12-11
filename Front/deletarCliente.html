@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo"> <img src="images/name.png" width="200" height="70" class="margin-left-50" /> </div>
+
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+
+    <ul>
+        <li> <a href="Menu.html"> Menu </a> </li>
+        <li> <a href="GetClientes.html" >Listar Clientes</a> </li>
+    </ul>
+</nav>
+<!-- <script src="main.js"></script> -->
+
+<div class="container">
+    <div class="container-login">
+        <div class="wrap-login">
+            <form class="login-form">
+					<span class="login-form-title">
+						Deletar Cliente
+					</span>
+<br>
+                <div class="wrap-input margin-top-35 margin-bottom-35">
+                    <input class="input-form" type="text" name="ID do Cliente" id="Id_Delete" autocomplete="off">
+                    <span class="focus-input-form" data-placeholder="Número do Cliente"></span>
+                </div>
+<br>
+                <div class="container-login-form-btn">
+                    <!-- <a href="Consulta.html">  -->
+                        <button type="button" class="login-form-btn" onclick="deleteCliente()">Deletar </button>
+                    <!-- </a> -->
+                </div>
+
+    
+            </form>
+        </div>
+        <img src="images/login.png" width="300" height="300" class="margin-left-50" />
+    </div>
+</div>
+
+<script>
+		let inputs = document.getElementsByClassName('input-form');
+		for (let input of inputs) {
+			input.addEventListener("blur", function() {
+				if(input.value.trim() != ""){
+					input.classList.add("has-val");
+				} else {
+					input.classList.remove("has-val");
+				}
+			});
+		}
+	</script>
+    <script src="index.js"></script>
+
+</body>
+</html>

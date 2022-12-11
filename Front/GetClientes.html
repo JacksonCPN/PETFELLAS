@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="logo"> <img src="images/name.png" width="200" height="70" class="margin-left-50" /> </div>
+        
+          
+        
+            <ul>
+                <li> <a href="Menu.html"> Menu </a> </li>
+                <li> <a href="deletarCliente.html" > Deletar Clientes</a> </li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <span class="login-form-title">Resgatar Clientes</span>   
+
+
+        <div class="container">
+
+            <div class="container-login">
+                <div class="wrap-login">
+                    <form class="login-form">
+                            <table id="clients"></table>
+                    </form>
+                
+                <br>
+                <br>
+                    <div class="menu-btn">
+                        <i class="fa fa-bars fa-2x" onclick="GetClientes()"></i>
+                        <button type="button" class="login-form-btn" onclick="GetClientes()">Listar Usuarios</button>
+                    </div>
+            <img src="images/login.png" width="300" height="300" class="margin-left-50" />
+        </div>
+    </body>
+</html>

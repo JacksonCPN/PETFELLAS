@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo"> <img src="images/name.png" width="200" height="70" class="margin-left-50" /> </div>
+
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+
+    <ul>
+        <li> <a href="Menu.html"> Menu </a> </li>
+
+    </ul>
+</nav>
+<!-- <script src="main.js"></script> -->
+
+<div class="container">
+    <div class="container-login">
+        <div class="wrap-login">
+            <form class="login-form">
+					<span class="login-form-title">
+						Cadastre-se
+					</span>
+
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="Nome" autocomplete="off" id="Cadastro_User_Nome">
+                        <span class="focus-input-form" data-placeholder="Nome Completo do Usuário"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="cpf" autocomplete="off" id="Cadastro_User_Cpf">
+                        <span class="focus-input-form" data-placeholder="Digite o seu CPF"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="cep" autocomplete="off" id="Cadastro_User_Cep">
+                        <span class="focus-input-form" data-placeholder="Digite o seu CEP"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="complemento" autocomplete="off" id="Cadastro_User_Complemento">
+                        <span class="focus-input-form" data-placeholder="Complemento"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="logradouro" autocomplete="off" id="Cadastro_User_Logradouro">
+                        <span class="focus-input-form" data-placeholder="Logradouro"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="numero" autocomplete="off" id="Cadastro_User_Numero">
+                        <span class="focus-input-form" data-placeholder="Número"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="Telefone" autocomplete="off" id="Cadastro_User_Telefone"> 
+                        <span class="focus-input-form" data-placeholder="Telefone"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="email" autocomplete="off" id="Cadastro_User_Email">
+                        <span class="focus-input-form" data-placeholder="E-mail"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-bottom-35">
+                        <input class="input-form" type="password" name="password" id="Cadastro_User_Password">
+                        <span class="focus-input-form" data-placeholder="Senha"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="nome" autocomplete="off" id="Cadastro_User_NomePet">
+                        <span class="focus-input-form" data-placeholder="Nome do Animal"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="idade" autocomplete="off" id="Cadastro_User_IdadePet">
+                        <span class="focus-input-form" data-placeholder="Idade do Animal"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="peso" autocomplete="off" id="Cadastro_User_PesoPet">
+                        <span class="focus-input-form" data-placeholder="Peso do Animal"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="racaId" autocomplete="off" id="Cadastro_User_RacaPet">
+                        <span class="focus-input-form" data-placeholder="Raça do Animal"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="altura" autocomplete="off" id="Cadastro_User_Altura">
+                        <span class="focus-input-form" data-placeholder="Altura do Animal"></span>
+                    </div>
+    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" name="largura" autocomplete="off" id="Cadastro_User_Largura">
+                        <span class="focus-input-form" data-placeholder="Largura do Animal"></span>
+                    </div>
+
+                <div class="container-cadastrar-form-btn">
+                    <button type="button" class="login-form-btn" onclick="CadastrarUser()">Cadastrar </button>
+                </div>
+
+                <li>
+                    <span class="text1"> Voltar ao </span> <a href="Home.html" class="text2"> Inicio </a>
+                </li>
+
+                </ul>
+            </form>
+        </div>
+        <img src="images/login.png" width="300" height="300" class="margin-left-50" />
+    </div>
+</div>
+
+<script>
+		let inputs = document.getElementsByClassName('input-form');
+		for (let input of inputs) {
+			input.addEventListener("blur", function() {
+				if(input.value.trim() != ""){
+					input.classList.add("has-val");
+				} else {
+					input.classList.remove("has-val");
+				}
+			});
+		}
+	</script>
+    <script src="index.js"></script>
+
+</body>
+</html>
