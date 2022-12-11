@@ -20,22 +20,22 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
 }
 
 /*
@@ -43,8 +43,8 @@
 */
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -117,15 +117,17 @@ button:hover {
     justify-content: center;
 }
 
+
+
 .container-login {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: var(--white-color);  
+  background: var(--white-color);
 }
 
 .wrap-login {
@@ -140,7 +142,41 @@ button:hover {
 
 .login-form {
   width: 100%;
+
 }
+
+#clients, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 5px 10px;
+
+}
+
+th::first-letter{
+  text-transform: uppercase;
+}
+
+th{
+  background-color: rgb(28, 54, 202);
+  color: white;
+}
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*aplica cor aos elemntos impares*/
+#clients tr:nth-child(odd){
+background-color: #ddd;
+
+}
+/*aplica cor aos elemntos pares*/
+#clients tr:nth-child(even){
+  background-color: white;
+}
+
 
 .login-form-title {
   display: block;
@@ -405,7 +441,7 @@ nav .menu-btn i{
     nav ul li a:hover{
         background: none;
         color: #f88f06;
-    }   
+    }
 }
 
 
@@ -525,13 +561,13 @@ main .main__img{
 @media (max-width:300px) {
     .main__text h1{
         font-size: 2.5em;
-    } 
+    }
 }
 
 /* home centrealizar */
 
 .container {
-  
+
   position: static;
 }
 
@@ -620,9 +656,9 @@ main .main__img{
 	outline: 0;
 	padding: 10px;
 	width: 100%;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
 	background-color: #e8eeef;
 	color:#8a97a0;
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -681,6 +717,3 @@ main .main__img{
 {
 	background: #109177;
 }
-
-
-
